@@ -1,0 +1,37 @@
+{
+  "banhmypate":
+  {
+    "pate": 1,
+    "trung": 1,
+    "rau": 2,
+    "banhmy": 1
+  },
+  "banhmycha":
+  {
+    "cha": 1,
+    "trung": 1,
+    "rau": 1,
+    "banhmy": 1
+  },
+  "banhmyxucxich":
+  {
+    "banhmy": 1,
+    "xucxich": 1,
+    "trung": 1,
+    "rau": 2
+  },
+  "mitomtrung":
+  {
+    "mytom": 1,
+    "trung": 2,
+    "rau": 2
+  },
+  "combinhdan":
+  {
+    "com": 1,
+    "trung": 2,
+    "gio": 2,
+    "xucxich": 1,
+    "rau": 2
+  }
+}

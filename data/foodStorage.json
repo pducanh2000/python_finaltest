@@ -1,0 +1,48 @@
+{
+  "trung":
+  {
+    "number": 0,
+    "price": 1500
+  },
+  "gio":
+    {
+      "number": 0,
+      "price": 2000
+    },
+  "cha":
+    {
+      "number": 0,
+      "price": 1500
+    },
+  "xucxich":
+    {
+      "number": 0,
+      "price": 3000
+    },
+  "rau":
+  {
+    "number": 0,
+    "price": 1000
+  },
+  "pate":
+  {
+    "number": 0,
+    "price": 2000
+  },
+  "com":
+  {
+    "number": 0,
+    "price": 1000
+  },
+  "banhmy":
+  {
+    "number": 0,
+    "price": 1000
+  },
+  "mytom":
+  {
+    "number": 0,
+    "price": 1000
+  }
+  
+}
