@@ -33,6 +33,8 @@ while True:
                 print(lacks, " is over...")
                 s = request.suggest(food_storage, count)
                 print("you can choose: ", s, " instead")
+            else:
+                print("Order success...")
     if choice == "4":
         break
     if choice not in ["1", "2", "3", "4"]:

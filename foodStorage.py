@@ -1,11 +1,5 @@
 import json
 
-try:
-    with open("data/recipe.json") as r:
-        recipe = json.load(r)
-finally:
-    r.close()
-
 
 # Set all the number of materials to 0
 def set_default(datafile):
@@ -48,6 +42,12 @@ def add():
 
 # Check if food storage have enough material for requirement
 def check(food_storage, request):
+    try:
+        with open("data/recipe.json") as r:
+            recipe = json.load(r)
+    finally:
+        r.close()
+
     boo = True
     lacks = []
     count = 0

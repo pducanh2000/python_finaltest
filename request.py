@@ -1,21 +1,14 @@
 import json
 import foodStorage
 
-try:
-    with open("data/foodStorage.json") as fs:
-        food_storage = json.load(fs)
-finally:
-    fs.close()
-
-try:
-    with open("data/recipe.json") as r:
-        recipe = json.load(r)
-finally:
-    r.close()
-
 
 # Nhap yeu cau khach hang tu ban phim
 def input_request():
+    try:
+        with open("data/recipe.json") as r:
+            recipe = json.load(r)
+    finally:
+        r.close()
     requests = {}
     try:
         s = input("orders (ex: 1 banhmypate, 2 mytomtrung): ").split(",")
@@ -33,6 +26,18 @@ def input_request():
 
 # Calculate the profit of each item on the list
 def sort_profit():
+    try:
+        with open("data/recipe.json") as r:
+            recipe = json.load(r)
+    finally:
+        r.close()
+
+    try:
+        with open("data/foodStorage.json") as fs:
+            food_storage = json.load(fs)
+    finally:
+        fs.close()
+
     real_price = {key: recipe[key][0] for key in recipe}
     dict_profit = {}
     for i in real_price.keys():
