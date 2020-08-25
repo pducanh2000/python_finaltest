@@ -30,7 +30,7 @@ def add():
                 add = item.split()
                 material = add[0]
                 number = int(add[1])
-                data.get(material)["number"] = number
+                data.get(material)["number"] += number
         with open(datafile, "w") as File:
             json.dump(data, File, indent=4)
             print("Add Successfully!")
