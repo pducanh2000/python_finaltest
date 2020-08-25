@@ -22,9 +22,11 @@ def check_price(data_file, price, materials):  # Compare the price between the f
     return False
 
 
-def input_recipe(data_file):
+def input_recipe():
     # Input to for the food
     # Input the name of the food
+    recipe_file = "data/recipe.json"
+    food_storage_file = "data/foodStorage.json"
     print('Input the recipe: ')
     name = input('Name: ')
 
@@ -35,7 +37,7 @@ def input_recipe(data_file):
             a = input('Name of the materials(Finish press enter): ')
             if a == '':
                 break
-            if not check_materials("data/foodStorage.json", a):
+            if not check_materials(food_storage_file, a):
                 raise Exception('materialsNotMatch')
             b = int(input('Number: '))
         except:
@@ -47,25 +49,25 @@ def input_recipe(data_file):
     # Input the food's price
     try:
         price = int(input('Enter the price: '))
-        if not check_price("data/foodStorage.json", price, materials):
+        if not check_price(food_storage_file, price, materials):
             raise Exception('PriceInvalid')
     except:
         print('******The price is invalid (smaller than the materials\'s price)*****')
         return
 
     # Update to the recipe file
-    with open(data_file, 'r') as File:
+    with open(recipe_file, 'r') as File:
         try:
             data = json.load(File)
             File.close()
         except json.decoder.JSONDecodeError:  # Check if the recipe file is None
-            with open(data_file, 'w') as File:
+            with open(recipe_file, 'w') as File:
                 json.dump({}, File)
                 data = {}
                 File.close()
 
     data[name] = [price, materials]  # Add {name: materials} to data
-    with open(data_file, 'w') as File:  # Update data to the file
+    with open(recipe_file, 'w') as File:  # Update data to the file
         json.dump(data, File, indent=4)
         File.close()
         print('*****Update the recipe complete!*****')

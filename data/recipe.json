@@ -43,5 +43,12 @@
             "xucxich": 1,
             "rau": 2
         }
+    ],
+    "banhmytrung": [
+        6500,
+        {
+            "trung": 2,
+            "banhmy": 1
+        }
     ]
 }

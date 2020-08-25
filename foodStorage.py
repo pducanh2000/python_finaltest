@@ -57,7 +57,7 @@ def check(food_storage, request):
             food_storage[m]["number"] -= materials[m] * request[food]
             if food_storage[m]["number"] < 0:
                 food_storage[m]["number"] += materials[m] * request[food]
-                lacks.append(food)
+                lacks.append({food: request[food]})
                 boo = False
                 count += request[food]
                 break

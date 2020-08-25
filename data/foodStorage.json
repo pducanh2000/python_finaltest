@@ -1,7 +1,7 @@
 {
     "banhmy": {
         "price": 1000,
-        "number": 23
+        "number": 0
     },
     "gio": {
         "price": 2500,
@@ -17,7 +17,7 @@
     },
     "trung": {
         "price": 1500,
-        "number": 9
+        "number": 5
     },
     "my": {
         "price": 2000,
@@ -25,11 +25,11 @@
     },
     "pate": {
         "price": 3000,
-        "number": 8
+        "number": 6
     },
     "rau": {
         "price": 1000,
-        "number": 8
+        "number": 4
     },
     "cha": {
         "price": 2000,

@@ -54,7 +54,7 @@ def sort_request_by_profit(request):
     return new_request
 
 
-# xxx
+# give a suggestion
 def suggest(f_s, count):
     sort = sort_profit()
     instead = {}
