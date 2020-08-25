@@ -1,48 +1,38 @@
 {
-  "trung":
-  {
-    "number": 0,
-    "price": 1500
-  },
-  "gio":
-    {
-      "number": 0,
-      "price": 2000
+    "banhmy": {
+        "price": 1000,
+        "number": 23
     },
-  "cha":
-    {
-      "number": 0,
-      "price": 1500
+    "gio": {
+        "price": 2500,
+        "number": 16
     },
-  "xucxich":
-    {
-      "number": 0,
-      "price": 3000
+    "xucxich": {
+        "price": 4000,
+        "number": 9
     },
-  "rau":
-  {
-    "number": 0,
-    "price": 1000
-  },
-  "pate":
-  {
-    "number": 0,
-    "price": 2000
-  },
-  "com":
-  {
-    "number": 0,
-    "price": 1000
-  },
-  "banhmy":
-  {
-    "number": 0,
-    "price": 1000
-  },
-  "mytom":
-  {
-    "number": 0,
-    "price": 1000
-  }
-  
+    "com": {
+        "price": 1500,
+        "number": 18
+    },
+    "trung": {
+        "price": 1500,
+        "number": 9
+    },
+    "my": {
+        "price": 2000,
+        "number": 0
+    },
+    "pate": {
+        "price": 3000,
+        "number": 8
+    },
+    "rau": {
+        "price": 1000,
+        "number": 8
+    },
+    "cha": {
+        "price": 2000,
+        "number": 20
+    }
 }
