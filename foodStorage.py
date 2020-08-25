@@ -20,7 +20,7 @@ def set_default(datafile):
 
 # Add to the Storage
 def add():
-    # return True of False tuong ung thanh cong hay khong
+    # return True or False tuong ung thanh cong hay khong
     try:
         datafile = "data/foodStorage.json"  # Change datafile here
         with open(datafile, "r") as File:
@@ -47,7 +47,6 @@ def check(food_storage, request):
             recipe = json.load(r)
     finally:
         r.close()
-
     boo = True
     lacks = []
     count = 0
@@ -66,11 +65,12 @@ def check(food_storage, request):
 
 # Update Storage
 def update(data):
-    # return true of false tuong ung thanh cong hay khong
     datafile = "data/foodStorage.json"
     try:
         with open(datafile, "w") as write:
             json.dump(data, write, indent=4)
     except:
         print("Order fail....")
+        return False
+    return True
 
